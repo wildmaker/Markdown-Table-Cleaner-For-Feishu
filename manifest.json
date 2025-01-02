@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Markdown Table Cleaner For Feishu",
+  "version": "2.1",
+  "description": "Clean copied Markdown tables and update clipboard content.",
+  "permissions": ["clipboardRead", "clipboardWrite"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+    }
+  }
+}
