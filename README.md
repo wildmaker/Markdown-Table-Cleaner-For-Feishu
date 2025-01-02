@@ -1,6 +1,4 @@
-为了方便小白用户使用插件，我们可以准备好一个压缩包，并更新 `README.md` 文件中的安装说明。以下是更新后的 README 文档。
 
----
 
 # Markdown 表格清理器插件
 
@@ -71,21 +69,9 @@
 ### 3. 清理后未更新剪贴板内容？
 可能是剪贴板权限被限制，请检查浏览器设置或手动复制清理后的内容。
 
----
-
-## 贡献
-欢迎提交问题报告或功能建议！您可以通过 [GitHub Issues](https://github.com/your-repository/markdown-table-cleaner/issues) 提交反馈。
 
 ---
 
-## 许可证
-本插件使用 [MIT License](https://opensource.org/licenses/MIT) 进行分发。
-
----
 
 ## 直接下载链接
 [Markdown 表格清理器插件下载](https://your-download-link.com/markdown-table-cleaner.zip)
-
----
-
-如果需要帮助，请联系支持团队！
