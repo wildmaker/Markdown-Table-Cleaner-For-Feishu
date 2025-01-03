@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "Markdown Table Cleaner For Feishu",
-  "version": "2.1",
-  "description": "Clean copied Markdown tables and update clipboard content.",
+  "name": "Markdown 表格清理器",
+  "version": "1.0",
+  "description": "清理和优化 Markdown 表格格式。",
   "permissions": ["clipboardRead", "clipboardWrite"],
   "action": {
     "default_popup": "popup.html",

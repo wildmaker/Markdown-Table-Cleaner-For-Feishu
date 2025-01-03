@@ -7,36 +7,106 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      margin: 20px;
+      margin: 0;
+      padding: 20px;
+      background-color: #f0f8ff;
       text-align: center;
     }
+    .title {
+      font-size: 14px;
+      font-weight: 600;
+      color: #9a9a9a;
+      margin-bottom: 10px;
+    }
     textarea {
-      width: 100%;
-      height: 100px;
-      margin-bottom: 20px;
+      width: 320px;
+      height: 120px;
+      margin-bottom: 10px;
       font-family: monospace;
-      font-size: 14px;
+      font-size: 12px;
+      border: 2px solid #cce7ff;
+      border-radius: 16px;
+      padding: 10px;
+      resize: none;
+      outline: none;
     }
-    button {
-      padding: 10px 20px;
-      font-size: 16px;
+    .button-19 {
+      appearance: button;
+      background-color: #1899D6;
+      border: solid transparent;
+      border-radius: 16px;
+      border-width: 0 0 4px;
+      box-sizing: border-box;
+      color: #FFFFFF;
       cursor: pointer;
+      display: inline-block;
+      font-family: din-round, sans-serif;
+      font-size: 15px;
+      font-weight: 700;
+      letter-spacing: .8px;
+      line-height: 20px;
+      margin: 0;
+      outline: none;
+      overflow: visible;
+      padding: 13px 16px;
+      text-align: center;
+      text-transform: uppercase;
+      touch-action: manipulation;
+      transform: translateZ(0);
+      transition: filter .2s, background-color .2s, box-shadow .2s;
+      user-select: none;
+      -webkit-user-select: none;
+      vertical-align: middle;
+      white-space: nowrap;
+      width: 100%;
+      position: relative;
     }
-    .status {
-      font-size: 14px;
-      color: blue;
-      margin-top: 10px;
+
+    .button-19:after {
+      background-clip: padding-box;
+      background-color: #1CB0F6;
+      border: solid transparent;
+      border-radius: 16px;
+      border-width: 0 0 4px;
+      bottom: -4px;
+      content: "";
+      left: 0;
+      position: absolute;
+      right: 0;
+      top: 0;
+      z-index: -1;
     }
-    .error {
-      color: red;
+
+    .button-19:hover:not(:disabled) {
+      filter: brightness(1.1);
+      -webkit-filter: brightness(1.1);
+    }
+
+    .button-19:disabled {
+      cursor: auto;
+    }
+
+    .button-19:active {
+      border-width: 4px 0 0;
+      background: none;
+    }
+
+    .button-19.success {
+      background-color: #28a745; /* 成功状态绿色 */
+      box-shadow: 0 4px 6px rgba(40, 167, 69, 0.4); /* 成功状态投影 */
+    }
+
+    .button-19.success:after {
+      background-color: #37c757; /* 成功状态下的底部投影颜色 */
     }
   </style>
 </head>
 <body>
-  <h1>Markdown 表格清理器</h1>
-  <textarea id="clipboard-content" placeholder="内容将显示在此处..."></textarea>
-  <button id="clean-button">清理格式</button>
-  <div id="status" class="status"></div>
+  <div>
+    <div class="title">清理 Markdown 表格</div>
+    <textarea id="clipboard-content" placeholder="在此处粘贴内容..."></textarea>
+    <button class="button-19" id="clean-button" role="button">清理格式</button>
+  </div>
   <script src="popup.js"></script>
 </body>
 </html>
